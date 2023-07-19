@@ -1,0 +1,61 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg,blue,pink,rgb(209,164,254));
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+/* body{
+    position: absolute;
+} */
+
+section{
+    text-align: center;
+    padding: 50px;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 300px;
+    margin: 50px auto;
+}
+
+.cell{
+    font-family: 'Permanent Marker',cursive;
+    color: red;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 70px;
+}
+.cell:hover{
+    background-color: rgb(209, 164, 254);
+}
+.tcell{
+    border-top-color:transparent;
+}
+
+.lcell{
+    border-left-color:transparent;
+}
+
+.rcell{
+    border-right-color:transparent;
+}
+
+.bcell{
+    border-bottom-color:transparent;
+}
+
+.game-restart{
+    background-color: orangered;
+    padding:5px 40px;
+    border-radius: 50px;
+}
+.game-restart:hover{
+    background-color: blueviolet;
+    border-color: blue;
+}
